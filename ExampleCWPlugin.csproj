@@ -27,7 +27,7 @@
     </ItemGroup>
     
     <Target Name="CopyOutputFileToGame" AfterTargets="Build">
-        <Copy SourceFiles="$(OutputPath)\$(AssemblyName).dll" DestinationFolder="$(CWDir)\Plugins\ExampleCWPlugin" />
+        <Copy SourceFiles="$(OutputPath)\$(AssemblyName).dll;preview.png" DestinationFolder="$(CWDir)\Plugins\ExampleCWPlugin" />
     </Target>
 
 </Project>
