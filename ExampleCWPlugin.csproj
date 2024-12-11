@@ -2,6 +2,7 @@
 
     <PropertyGroup>
         <TargetFramework>netstandard2.1</TargetFramework>
+        <DisableImplicitFrameworkReferences>true</DisableImplicitFrameworkReferences>
         <ImplicitUsings>enable</ImplicitUsings>
         <Nullable>enable</Nullable>
         <LangVersion>latest</LangVersion>
@@ -9,6 +10,12 @@
     </PropertyGroup>
 
     <ItemGroup>
+        <Reference Include="mscorlib">
+            <HintPath>$(CWDir)\Content Warning_Data\Managed\mscorlib.dll</HintPath>
+        </Reference>
+        <Reference Include="netstandard">
+            <HintPath>$(CWDir)\Content Warning_Data\Managed\netstandard.dll</HintPath>
+        </Reference>
         <Reference Include="UnityEngine.CoreModule">
             <HintPath>$(CWDir)\Content Warning_Data\Managed\UnityEngine.CoreModule.dll</HintPath>
         </Reference>
